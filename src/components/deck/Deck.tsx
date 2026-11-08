@@ -313,8 +313,8 @@ export function Deck() {
       <Scene>
         <div className="text-center">
           <p className="a kicker">// eof</p>
-          <h2 className="a mt-6 text-6xl md:text-9xl font-medium leading-none tracking-tighter">Спасибо<span className="text-neon caret">_</span></h2>
-          <p className="a mt-8 font-mono text-muted-foreground">{TEAM_NAME} · [контакт / ссылка]</p>
+          <h2 className="a mt-6 text-6xl md:text-9xl font-medium leading-none tracking-tighter">Спасибо.<span className="text-neon caret">_</span></h2>
+          <p className="a mt-8 font-mono text-muted-foreground">{TEAM_NAME} · [готовы ответить на ваши вопросы.]</p>
         </div>
       </Scene>
       </div>

@@ -1,14 +1,14 @@
 // Placeholders — replace with real data.
 export const TEAM = [
-  { name: "[Имя Фамилия 1]", role: "Team Lead · Fullstack" },
-  { name: "[Имя Фамилия 2]", role: "Backend" },
-  { name: "[Имя Фамилия 3]", role: "Backend" },
-  { name: "[Имя Фамилия 4]", role: "Design · Frontend" },
+  { name: "Пономарев Лев Николаевич", role: "Team Lead · Fullstack" },
+  { name: "Антонов Артем Эдуардович", role: "Backend" },
+  { name: "Петр Голов Павлович", role: "Backend" },
+  { name: "Ворошилова Лика Сергеевна", role: "Design · Frontend" },
 ];
 
-export const TEAM_NAME = "[TEAM_NAME]";
-export const CASE_TITLE = "[Название кейса]";
-export const CASE_TEXT = "[Короткое описание задачи кейса: что требовалось решить и для кого — 1–2 предложения.]";
+export const TEAM_NAME = "MIK CODERS";
+export const CASE_TITLE = "Обработка аудио в текст в реальном времени";
+export const CASE_TEXT = "Android-приложение для локальной расшифровки диалогов с разделением по спикерам и таймкодам.";
 
 export const TECH = [
   { k: "01", t: "[Сбор аудио]", d: "[Захват потока с микрофона]" },
@@ -18,10 +18,23 @@ export const TECH = [
 ];
 
 export const SOLUTIONS = [
-  { t: "[Решение 1]", d: "[Что сделали и почему это работает]", m: "[XX%]" },
-  { t: "[Решение 2]", d: "[Что сделали и почему это работает]", m: "[XX ms]" },
-  { t: "[Решение 3]", d: "[Что сделали и почему это работает]", m: "[XX×]" },
+  {
+    t: "100% On-Device тракт",
+    d: "VAD, ASR (Zipformer-ru int8) и диаризация работают полностью на телефоне в авиарежиме. Ни одного байта звука в облако.",
+    m: "0 B в сеть",
+  },
+  {
+    t: "Диаризация до 6 спикеров",
+    d: "pyannote 3.0 + 3D-Speaker ERes2Net с кластеризацией реплик и точными миллисекундными таймкодами (start_ms / end_ms).",
+    m: "K ≤ 6",
+  },
+  {
+    t: "Локальная LLM + RTF 0.12",
+    d: "Qwen2-0.5B (GGUF через llama.cpp) расставляет интонационную пунктуацию без искажения слов; обработка в 8.5× быстрее аудио.",
+    m: "0.12 RTF",
+  },
 ];
+
 
 // Fallback lines for the live-transcript box when the browser has no speech recognition.
 export const FAKE_TRANSCRIPT = [
